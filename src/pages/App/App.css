@@ -1,0 +1,105 @@
+body {
+    background: linear-gradient(90deg, #2E69FF -48.64%, #AA6FB8 42.47%, #FF8A1D 129.13%);
+
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+.App {
+    width: 500px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.add-tarefa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    margin-top: 10vh;
+}
+
+.add-tarefa:hover {
+    scale: 1.3;
+    transition: all .2s ease-in-out;
+}
+
+.add-tarefa:not(:hover) {
+    scale: 1;
+    transition: all .2s ease-in-out;
+}
+
+.add-tarefa input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.tarefas{
+    display: flex;
+    flex-direction: column;
+
+    /* border: 1px solid #000; */
+    /* border-radius: 5px; */
+
+
+    /* min-height: 200px; */
+}
+
+.tarefa {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(255, 255, 255, 0.5);
+
+    border: 1px solid #000;
+    border-radius: 5px;
+
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.tarefa input[type="checkbox"] {
+    width: 20px;
+    height: 20px;
+}
+
+.tarefa input[type="text"] {
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 16px;
+}
+
+.tarefa input[type="text"][disabled] {
+    outline: none;
+    border: none;
+    /* background: none; */
+}
+
+.tarefa img {
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.tarefa img:hover {
+    opacity: 0.5;
+}
+
+@media (max-width: 500px) {
+    .App {
+        width: 100%;
+    }
+}
